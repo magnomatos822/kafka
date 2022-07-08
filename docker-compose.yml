@@ -27,8 +27,8 @@ services:
 
   kafdrop:
     image: obsidiandynamics/kafdrop:latest
-    networks:
-      - broker-kafka
+    # networks:
+    #   - broker-kafka
     depends_on:
       - kafka
     ports:
