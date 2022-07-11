@@ -3,7 +3,7 @@ version: '3'
 services:
   zookeeper:
     image: confluentinc/cp-zookeeper:latest
-    container_name: zookeeper
+    container_name: "zookeeper"
     # networks:
     #   - broker-kafka
     environment:
@@ -12,7 +12,7 @@ services:
 
   kafka:
     image: confluentinc/cp-kafka:latest
-    container_name: kafka
+    container_name: "kafka"
     # networks:
     #   - broker-kafka
     depends_on:
@@ -29,7 +29,7 @@ services:
 
   kafdrop:
     image: obsidiandynamics/kafdrop:latest
-    container_name: 'kafdrop'
+    container_name: "kafdrop"
     # networks:
     #   - broker-kafka
     depends_on:
